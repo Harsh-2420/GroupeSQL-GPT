@@ -90,9 +90,10 @@ def query_agent(agent, query):
         Recency
         :mumber of days since the last purchase
 
-
-        Below is the query.
-        Query: 
+        Only return the SQL Query.
+        
+        Below is the prompt.
+        Prompt: 
         """
         + query
     )
