@@ -6,7 +6,7 @@ import sqlite3
 import csv
 from agent import query_agent, create_agent
 
-csv_path = "/Users/harjhunj/Downloads/langchain_csv-main/ml_project1_data.csv"
+csv_path = "./ml_project1_data.csv"
 
 def write_response(response_dict: dict):
     """
