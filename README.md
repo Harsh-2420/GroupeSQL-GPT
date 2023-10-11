@@ -23,10 +23,17 @@ In my past experience, I've seen that LLMs halluncinate more with csv data. The 
 
 I tried to leverage this feature of the LLM and ran the SQL query locally in a Sqlite3 database.
 
-### Future Imprvements
+## Future Imprvements
 
 If the sql queries generate an incorrect result or an error, we can include functionality to feed the error message back to the LLM to get an improved version of the SQL query. Furthermore, the LLM can also learn (if setup that way).
 
-### Testing Bugs
+## Testing Bugs
 
 In some cases, the LLM continues to output its own results instead of the SQL queries. These results might be correct but have a small chance of being wrong. This needs to be tested further and fixed.
+
+## Implementation Examples
+
+![Q1](https://github.com/Harsh-2420/GroupeSQL-GPT/blob/main/screenshots/Q1.png)
+![Q2](https://github.com/Harsh-2420/GroupeSQL-GPT/blob/main/screenshots/Q2.png)
+![Q3](https://github.com/Harsh-2420/GroupeSQL-GPT/blob/main/screenshots/Q3.png)
+![SQL](https://github.com/Harsh-2420/GroupeSQL-GPT/blob/main/screenshots/SQL_Queries.png)
