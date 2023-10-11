@@ -4,8 +4,8 @@ The user will have to go to the code and add the file path to the csv in `interf
 
 Then, run the following commands:
 
-- pip install -r requirements.txt
-- streamlit run interface.py
+- `pip install -r requirements.txt`
+- `streamlit run interface.py`
 
 ## How does this work?
 
