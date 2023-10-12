@@ -27,6 +27,8 @@ I tried to leverage this feature of the LLM and ran the SQL query locally in a S
 
 If the sql queries generate an incorrect result or an error, we can include functionality to feed the error message back to the LLM to get an improved version of the SQL query. Furthermore, the LLM can also learn (if setup that way).
 
+Currently, the sqlite3 database gets recreated with each query. We'd change this to create once in a session and get cleared when the session ends.
+
 ### Testing Bugs
 
 In some cases, the LLM continues to output its own results instead of the SQL queries. These results might be correct but have a small chance of being wrong. This needs to be tested further and fixed.

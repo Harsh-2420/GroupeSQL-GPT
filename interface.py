@@ -80,7 +80,7 @@ def query_local_db(sql_query, df):
     cursor.execute(create_table_sql)
 
     for _, row in df.iterrows():
-        values = ', '.join([f"'{row[col]}'" if sqlite_data_types[col] == 'TEXT' else str(row[col]) for col in df.columns])
+        values = ', '.join([ str(row[col]) if sqlite_data_types[col] == 'INTEGER' else f"'{row[col]}'" for col in df.columns])
         insert_sql = f'''
             INSERT INTO df
             VALUES ({values})
@@ -127,3 +127,4 @@ if st.button("Submit Query", type="primary"):
 # "Which ID has the highest income? Only consider IDs that have marital_status of single and Education of PhD"
 # "what is the count of customers who had number of purchases made with discount greater than 2"
 # "what is the count of customers who spent more than 500 on wines and have an education of PhD"
+# "what is the id of the person with the highest income whose marital status is single and education is PhD "
